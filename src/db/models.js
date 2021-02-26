@@ -9,6 +9,7 @@ const db = new Sequelize({
 
 const COL_ID_DEF = {
   type: Sequelize.DataTypes.INTEGER,
+  autoIncrement: true,
   primaryKey: true,
 };
 
