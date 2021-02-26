@@ -1,4 +1,5 @@
 const {Users} = require('../db/models');
+const users = require('../routes/users');
 const {genRandomUsername} = require('../utilts/username');
 
 async function createAnonUser() {
@@ -9,8 +10,18 @@ async function createAnonUser() {
   return user;
 }
 
+async function getUserById(id) {
+  return await Users.findOne({where: {id}});
+}
+
+async function getUserByUsername(username) {
+  return await Users.findOne({where: {username}});
+}
+
 module.exports = {
   createAnonUser,
+  getUserById,
+  getUserByUsername,
 };
 
 /*test code */
