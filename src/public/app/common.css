@@ -1,6 +1,7 @@
 #navbar {
   position: sticky;
   top: 0px;
+  z-index: 1;
   background-color: var(--light);
 }
 
@@ -13,5 +14,5 @@
 }
 
 #content {
-  height: 2000px;
+  /* height: 2000px; */
 }
