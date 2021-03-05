@@ -75,7 +75,7 @@ this will create a new post, required fieldare
 
 ### comments
 
-1. **show all comments (of a user)**
+1 **show all comments (of a user)**
 
 2 **show all comments (under a posts)**
 
